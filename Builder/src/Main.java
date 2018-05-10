@@ -1,3 +1,8 @@
+/**
+ * Demo Implementation of Builder design pattern
+ * @author smiley
+ *
+ */
 public class Main {
 
 	public static void printShipData(SpaceShip FerDeLance) {

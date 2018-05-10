@@ -1,5 +1,10 @@
 import interfaces.Bucket;
 
+/**
+ * Decorator Design pattern implementation
+ * @author smiley
+ *
+ */
 public class Main {
 
 	public static void main(String[] args) {

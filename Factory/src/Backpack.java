@@ -1,4 +1,9 @@
 
+/**
+ *Simple class for storing demo data
+ * @author smiley
+ *
+ */
 public abstract class Backpack {
  
 	public abstract int getPockets();
@@ -6,7 +11,10 @@ public abstract class Backpack {
 	public abstract boolean getFitsAxe();
 
  
- private String fitsAxe(){
+ /**
+ * @return information whether a backpack can fit an axe
+ */
+private String fitsAxe(){
 	 return this.getFitsAxe() != false ? "being able" : "not being able" ;
  }
 

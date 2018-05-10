@@ -3,8 +3,8 @@ package classes;
 import interfaces.CommandExecutor;
 
 /**
+ * Main class for executing Proxy Design pattern demonstration
  * @author smiley
- * Main class for executing Proxy Design pattern demonstration 
  */
 public class Main {
 

@@ -1,3 +1,8 @@
+/**
+ * Demonstration of Factory Design pattern functionality
+ * @author smiley
+ *
+ */
 public class Main {
 
 	public static void main(String[] args) {

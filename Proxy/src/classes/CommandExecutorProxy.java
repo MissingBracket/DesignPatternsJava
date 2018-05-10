@@ -1,11 +1,13 @@
 package classes;
 
+import java.io.IOException;
+
 import interfaces.CommandExecutor;
 
 /**
- * @author smileperience
  * Proxy Class responsible for executing system commands
  * with simple authentication capabilities 
+ * @author smiley
  */
 public class CommandExecutorProxy implements CommandExecutor{
 
@@ -24,11 +26,16 @@ public class CommandExecutorProxy implements CommandExecutor{
 	}
 
 	@Override
-	public void runCommand(String cmd) throws Exception {
+	public void runCommand(String cmd) throws IOException {
 		if(has_privileges){
-			executor.runCommand(cmd);
+			try {
+				executor.runCommand(cmd);
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}else{
-			throw new Exception("User is not allowed to run commands");
+			throw new IOException("User is not allowed to run commands");
 		}
 		
 	}

@@ -1,4 +1,9 @@
 
+/**
+ * Sample module type
+ * @author smiley
+ *
+ */
 public enum ModuleType {
 	empty, laser, cargo_rack, jumpdrive, 
 	shield_generator, fighter_hangar,

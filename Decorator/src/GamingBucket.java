@@ -1,7 +1,15 @@
 import interfaces.Bucket;
 
+/**
+ * Sample bucket type
+ * @author smiley
+ *
+ */
 public class GamingBucket extends BucketDecorator{
 
+	/**
+	 * @param b Bucket to be dercorated
+	 */
 	public GamingBucket(Bucket b) {
 		super(b);
 	}
